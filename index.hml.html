@@ -166,6 +166,16 @@
     border-radius: 8px;
     border: 1px solid red;
   }
+	   .alert-message {
+    color: red;
+    font-weight: bold;
+    background-color: #ffeaea;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
   </style>
 
 </head>
@@ -8416,9 +8426,9 @@
           </table>
         `;
       } else {
- 
-        notFoundDiv.textContent = "⚠️الموظف غير متقدم للعمل في امتحان الثانوية العامة للعام 2025 الامتحان العام.";
-   
+ notFoundDiv.className = "alert-message";
+notFoundDiv.textContent = "⚠️ الموظف غير متقدم للعمل في امتحان الثانوية العامة للعام 2025 (الامتحان العام).";
+
 
       }
     }
